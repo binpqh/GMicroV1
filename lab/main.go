@@ -3,39 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	Test_lower_bound()
-	//array => position A -> B => find
+	nums1 := [2]int{2, 0}
+	nums2 := [1]int{1}
+	merge(nums1[:], 1, nums2[:], 1)
 }
-func lower_bound(array []int64, to_search int64) int {
-	index := -1
-	low := 0
-	high := len(array) - 1
-	for low <= high {
-		mid := (low + high) / 2
-		if array[mid] <= to_search {
-			low = mid + 1
-			index = mid
+
+// nums1 => first num-array
+// nums2 => second num-array,
+// m => number of elements taked in nums1,
+// n => number of elements taked in nums2,
+func merge(nums1 []int, m int, nums2 []int, n int) {
+	for n != 0 {
+		if m != 0 && nums1[m-1] > nums2[n-1] {
+			nums1[m+n-1] = nums1[m-1]
+			m--
 		} else {
-			high = mid - 1
+			nums1[m+n-1] = nums2[n-1]
+			n--
 		}
 	}
-	return index
-}
-
-// Test
-func Test_lower_bound() {
-
-	array := []int64{1, 3, 4, 5}
-	to_search1 := 0
-	to_search2 := 2
-	to_search3 := 5
-	if lower_bound(array, int64(to_search1)) != -1 {
-		fmt.Printf("fail")
-	}
-	if lower_bound(array, int64(to_search2)) != 0 {
-		fmt.Printf("fail")
-	}
-	if lower_bound(array, int64(to_search3)) != 3 {
-		fmt.Printf("fail")
-	}
+	fmt.Println(nums1)
 }
