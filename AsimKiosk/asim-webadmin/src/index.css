@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* .ant-checkbox-checked .ant-checkbox-inner {
+	background-color: #24e397;
+	border-color: #24e397;
+} */

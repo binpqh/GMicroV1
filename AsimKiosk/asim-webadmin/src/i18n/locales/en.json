@@ -1,0 +1,722 @@
+{
+  "signIn": {
+    "form": {
+      "username": "User Name",
+      "password": "Password",
+      "login": "Login",
+      "forgotPassword": "Forgot your password ?"
+    },
+    "messages": {
+      "successfully": "Welcome to Asset Management System",
+      "unsuccessfully": "Login ID or passowrd is incorrect. Please try again"
+    },
+    "inputRequire": {
+      "username": "Please input your Username!",
+      "password": "Please input your Password!"
+    }
+  },
+
+  "register": {
+    "title": "Create account",
+    "form": {
+      "email": "Email",
+      "fullName": "Full Name",
+      "username": "User Name",
+      "password": "Password",
+      "groupId": "Group",
+      "role": "Role",
+      "address": "Address",
+      "phoneNumber": "Phone number",
+      "submit": "Register"
+    },
+    "messages": {
+      "successfully": "You have successfully registered an account into the Asset Management System.",
+      "unsuccessfully": "An error occurred. Please try again."
+    },
+    "inputRequire": {
+      "email": "Please enter email",
+      "username": "Please enter Username",
+      "password": "Please enter Password",
+      "fullName": "Please enter Full Name",
+      "groupId": "Please chose Group",
+      "role": "Please chose Role",
+      "address": "Please enter Address",
+      "phoneNumber": "Please enter Phone number"
+    }
+  },
+  "account": {
+    "title": "Account Management",
+    "form": {
+      "fullName": "Full Name",
+      "username": "User Name",
+      "groupId": "Group",
+      "role": "Role",
+      "status": "Status",
+      "address": "Address",
+      "action": "Action"
+    }
+  },
+  "forgotPassword": {
+    "form": {
+      "email": "Email"
+    },
+    "btnForgotPassword": "Forgot Password",
+    "messages": {
+      "sendRequestSuccessfully": "Send request changing password successfully. Please check your email for next step.",
+      "wrongEmail": "Your email is invalid. Please check again.",
+      "guideline": "Please enter your email into the field below to reset your password"
+    }
+  },
+  "resetPassword": {
+    "form": {
+      "password": "New Password",
+      "rePassword": "Confirm New Password"
+    },
+    "btnChangePassword": "Change password",
+    "messages": {
+      "expired": "Your reset password request is expired. Please try again.",
+      "hi": "Hi",
+      "guideline": "Please change your password",
+      "changePasswordSuccessfully": "Reset password successfully!",
+      "msgPleaseGoToLogin": "Please login to continue using the system"
+    }
+  },
+  "changePassword": {
+    "btnCancel": "Cancel",
+    "btnSave": "Save",
+    "form": {
+      "oldPassword": "Current Password",
+      "password": "New Password",
+      "confirmPassword": "Confirm Password"
+    },
+    "messages": {
+      "success": "Changed password successfully",
+      "failure": "Password change failed",
+      "ERR_107": "Your old password is incorrect.",
+      "ERR_105": "The new password does not match with the confirm password."
+    }
+  },
+  "search": {
+    "fullTextSearch": {
+      "inputValue": "Enter a keyword",
+      "search": "Search",
+      "advanceSearch": "AdvanceSearch",
+      "clear": "Clear",
+      "reset": "Reset"
+    },
+    "optionsAdvanceSearch": {
+      "settingAdvanceSearch": "Setting for advance search",
+      "chooseOptionsAdvanceSearch": "Please select the fields you want to search",
+      "checkAll": "Check all options",
+      "cancel": "Cancel",
+      "choose": "Choose"
+    },
+    "advanceSearch": {
+      "settingAdvanceSearch": "Setting for advance search",
+      "simpleSearch": "Simple search",
+      "cancel": "Cancel",
+      "search": "Search",
+      "all": "All"
+    },
+    "columns": {
+      "settingColumnOptions": "Setting for column options",
+      "chooseOptionsColumn": "Please select the columns you want to display",
+      "messages": {
+        "getColumnOptionsUnsuccessfully": "Fetch column options fail"
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Home Page",
+    "displayList": "Display",
+    "recordList": "record"
+  },
+  "paymentInformation": {
+    "title": "Thông tin thanh toán",
+    "list": {
+      "columns": {
+        "tenKiosk": "Kiosk",
+        "orderNumber": "Mã đơn hàng",
+        "loaiSim": "Loại sim",
+        "maGoiCuoc": "Gói cước",
+        "soTien": "Số tiền",
+        "status": "Trạng thái",
+        "ngayTao": "Ngày thực hiện",
+        "tongSimTraTien": "Số lượng"
+      },
+      "btnXemDicom": "Xem lịch sử dicom"
+    },
+
+    "detail": {
+      "title": "Thông tin chi tiết thanh toán",
+      "btnCancel": "Hủy"
+    }
+  },
+  "sales": {
+    "title": "Doanh số",
+    "list": {
+      "columns": {
+        "tenKiosk": "Kiosk",
+        "doanhSo": "Doanh số",
+        "tuNgay": "Từ ngày",
+        "denNgay": "Đến ngày"
+      },
+      "form": {
+        "tuNgay": "Từ ngày",
+        "denNgay": "Đến ngày"
+      }
+    },
+    "export": "Xuất excell"
+  },
+  "cameraManagement": {
+    "title": "Surveillance Camera",
+    "videoList": "Video List"
+  },
+
+  "datePickerFrom": {
+    "datePicker": "Date Picker",
+    "today": "Today",
+    "Last7Days": "Last 7 Days",
+    "Last14Days": "Last 14 Days",
+    "Last30Days": "Last 30 Days",
+    "Last90Days": "Last 90 Days"
+  },
+  "maintenance": {
+    "title": "Maintenance Management",
+    "list": {
+      "columns": {
+        "kioskName": "kiosk Name",
+        "logBy": "Creator",
+        "createdAt": "Created At",
+        "note": "Note",
+        "deviceErrorCode": "Error Code",
+        "maintenanceState": "State",
+        "assignee": "Maintainer"
+      },
+      "btnAdd": "Add New Maintenance",
+      "btnSuccecs": "Complete Ticket",
+      "btnDelete": "Delete Ticket",
+      "btnAssignee": "Assign Maintainer"
+    },
+
+    "update": {
+      "title": "Cập nhật",
+      "btnSave": "Lưu",
+      "btnCancel": "Hủy"
+    },
+    "detail": {
+      "title": "Maintenance ticket information",
+      "info": "Detail Information",
+      "ChoseUser": "Chose Maintainer",
+      "ChoseDeviceError": "Chose Device Error"
+    },
+    "errMessage": {
+      "noKioskSelected": "Bạn chưa chọn kiosk",
+      "areYouSure": "Bạn có chắc muốn thực hiện hành động này?",
+      "openLockOK": "Mở khóa thành công",
+      "openLockFailed": "Mở khóa không thành công",
+      "tatAppOK": "Tắt ứng dụng thành công",
+      "tatAppFailed": "Tắt ứng dụng không thành công",
+      "refreshConfigOK": "Làm mới cấu hình thành công",
+      "refreshConfigFailed": "Làm mới cấu hình không thành công",
+      "rebootOK": "Reboot thành công",
+      "rebootFailed": "Reboot không thành công",
+      "restartAppOK": "Restart App thành công",
+      "restartAppFailed": "Restart App không thành công"
+    }
+  },
+
+  "inventoryManagement": {
+    "title": "Inventory Management",
+    "dispenser": "Dispenser",
+    "ticketList": "Inventory Ticket List",
+    "AddTicket": "Add Inventory Ticket",
+    "inventoryKioskInfo": "Inventory Kiosk information",
+    "AlertAddTicketMess": "Please select the Dispenser Slot and add product information you want to add to inventory ticket",
+
+    "list": {
+      "columns": {
+        "STT": "Index",
+        "kioskName": "Kiosk name",
+        "groupName": "Group",
+        "createdAt": "createdAt",
+        "progress": "Progress",
+        "creatorName": "Creator Name"
+      },
+      "KioskInventory": {
+        "quantity": "Remaining",
+        "errorQuantity": "Error Tray",
+        "itemCode": "Item Code",
+        "dispenserSlot": "Dispenser Slot",
+        "spaceRemaining": "Space Remaining",
+        "cleanErrorTray": "Clean Error Tray"
+      }
+    },
+    "detailTicket": {
+      "title": "Warehouse ticket detail",
+      "info": "Product Information",
+      "UpdateInfo": "Update Ticket",
+      "btnAddInfo": "Add Product Information",
+      "validate1Product": "There must be at least 1 product in the coupon corresponding to 1 Dispenser Slot",
+      "validate4Product": "Maximum 4 products can be created in the ticket corresponding to 4 Dispenser Slot",
+      "AlertAddTicketMess": "SIM LOCAL - Enter Serial",
+      "messageUpdateSuccess": "Successfully updated Ticket Information",
+      "messageUpdateError": "Updating Ticket information failed",
+      "form": {
+        "ChoseKiosk": "Chose Kiosk",
+        "ticketFile": "Authentic Document",
+        "kioskName": "Kiosk name",
+        "deviceId": "Device Id",
+        "status": "Status",
+        "groupName": "Group",
+        "creatorName": "Creator",
+        "progress": "Progress",
+        "description": "Description",
+        "createdAt": "Created At"
+      },
+      "validateMess": {
+        "card": "Card",
+        "maxCard": "The Dispenser's maximum input quantity is",
+        "SerialTo": "The sum of the 'To Serial - From Serial' field must be equal to the 'Quantity' field"
+      },
+      "productQuantities": {
+        "AlertSimMess": "SIM LOCAL - Enter Serial Code. Note: The Serial string must be in ascending order and the total value must be equal to the 'Quantity' field",
+        "title": "Ticket detail",
+        "itemName": "Name",
+        "deviceName": "Device",
+        "itemCode": "Item Code",
+        "dispenserSlot": "Dispenser Slot",
+        "quantity": "Quantity",
+        "from": "Serial From",
+        "to": "Serial To",
+        "confirmationImageKey": "Confirmation Image",
+        "completionState": "Status",
+        "finishedAt": "Finished At",
+        "assigneeName": "Implementer"
+      },
+      "ChangeStatusTicket": {
+        "title": "Change status product",
+        "completedTitle": "Confirm Completion",
+        "completedMess": "This action confirms the card has been added to the dispenser tray and will change the product's status to COMPLETED.",
+        "enabledMess": "This action will change the product's status to PENDING. Are you sure you want to change?",
+        "DisabledMess": "This action will change the product's status to DISABLED. Are you sure you want to change?",
+        "messageSuccess": "Successfully change product Status ",
+        "messageError": "Updating product Status failed"
+      }
+    }
+  },
+
+  "overview": {
+    "title": "Tổng quan",
+    "list": {
+      "columns": {
+        "ten": "Kiosk",
+        "nhietDo": "Nhiệt độ",
+        "doAm": "Độ ẩm",
+        "soLuongBan": "Số lượng bán",
+        "soLuongTon": "Số lượng tồn",
+        "trangThai": "Trạng thái"
+      }
+    }
+  },
+  "errorManagement": {
+    "title": "Error Management API",
+    "detail": {
+      "title": "Detail Log",
+      "list": {
+        "columns": {
+          "createdAt": "Ngày tạo",
+          "type": "Log Type",
+          "apiUrl": "API URL",
+          "desc": "Nội dung"
+        }
+      }
+    },
+    "list": {
+      "columns": {
+        "kioskName": "Kiosk Name",
+        "groupName": "Group Name",
+        "deviceId": "Device Id",
+        "numberOfLogs": "Number of Logs"
+      }
+    }
+  },
+
+  "kiosk": {
+    "title": "Kiosk List",
+    "list": {
+      "columns": {
+        "deviceId": "Device Id",
+        "name": "Kiosk Name",
+        "healthStatus": "Health Status",
+        "status": "Status",
+        "state": "State",
+        "action": "Actions",
+        "groupName": "Group"
+      },
+      "btnAcction": "Details",
+      "btnApproved": "Approved",
+      "btnReject": "Reject"
+    },
+    "detail": {
+      "title": "Details Kiosk",
+      "info": "Kiosk information",
+      "btnCancel": "Cancel",
+      "btnSave": "Add ",
+      "form": {
+        "name": "Kiosk Name",
+        "deviceId": "Device Id",
+        "service": "Service",
+        "address": "Address",
+        "config": "configuration",
+        "status": "Status",
+        "healthStatus": "Health Status",
+        "posCodeTerminal": "Terminal Id",
+        "groupId": "Group"
+      },
+      "configuration": {
+        "title": "Configuration details",
+        "device": "Device"
+      },
+      "externalInformation": {
+        "logPeripheral": "View Log",
+        "title": "External Information",
+        "editTitle": "Update External",
+        "starNum": "Evaluate",
+        "mainBoard": "Mainboard",
+        "sensor": "Senor",
+        "locker": "Locker",
+        "printer": "Printer",
+        "simList": "Dispenser list",
+        "dispenser1": " Dispenser 1",
+        "dispenser2": " Dispenser 2",
+        "dispenser3": " Dispenser 3",
+        "dispenser4": " Dispenser 4",
+        "camera": "Camera",
+        "sdcard": "SD card",
+        "ups": "UPS",
+        "vnpos": "VNPOS",
+
+        "deviceCode": "Device Code",
+        "deviceName": "Device Name",
+        "devicePath": "COM Port",
+        "itemCode": "Product code",
+        "productCode": "Product type",
+        "hasSerialNumbers": "Save SERIAL Number",
+        "warningPaper": "Printer",
+        "paperEmpty": "Printing paper running low",
+        "temperture": "Temperature",
+        "bateryLevel": "Remaining battery level",
+        "consumedLoad": "Consumed Load",
+        "batteryVoltage": "Battery Voltage",
+        "inputVoltage": "Input Voltage",
+        "outPutVoltage": "Output Voltage",
+        "frequencyOutput": "Output Frequency"
+      }
+    },
+    "update": {
+      "title": "Update Kiosk",
+      "info": "Kiosk information",
+      "btnSave": "Save",
+      "btnCancel": "Cancel",
+      "form": {
+        "index": "Numerical order",
+        "name": "Kiosk Name",
+        "posCodeTerminal": "Terminal Id",
+        "groupId": "Group",
+        "service": "Service",
+        "address": "Address",
+        "config": "Configuration",
+        "status": "Status",
+        "simList": "Dispenser list",
+        "dispenser1": "Sim Dispenser1",
+        "dispenser2": "Sim Dispenser2",
+        "dispenser3": "Sim Dispenser3",
+        "dispenser4": "Sim Dispenser4",
+        "dispenserStatus": "Dispenser Status",
+        "simQuantity": "Quantity",
+        "path": "Path",
+        "paymentHub": "payment Hub"
+      },
+      "externalInformation": "external Information",
+      "messageSuccess": "Successfully updated Kiosk information ",
+      "messageError": "Updating Kiosk information failed"
+    },
+    "ChangeStatusKiosk": {
+      "enabledMess": "This action will change the kiosk's Status to Active. Are you sure you want to change?",
+      "DisabledMess": "This action will change the kiosk's Status to Inactive. Are you sure you want to change?",
+      "messageSuccess": "Successfully change Kiosk Status ",
+      "messageError": "Updating Kiosk Status failed",
+      "enabledPeripheralMess": "This action will change the Peripheral's Status to Active. Are you sure you want to change?",
+      "DisabledPeripheralMess": "This action will change the Peripheral's Status to Inactive. Are you sure you want to change?",
+      "messagePeripheralSuccess": "Successfully change Peripheral Status ",
+      "messagePeripheralError": "Updating Peripheral Status failed"
+    }
+  },
+
+  "group": {
+    "title": "Group List",
+    "list": {
+      "columns": {
+        "groupId": "Group ID",
+        "name": "Group name",
+        "status": "Status",
+        "userCount": "Members",
+        "kioskCount": "Kiosk Count",
+        "action": "Action"
+      },
+      "btnAcction": "Details",
+      "btnDelete": "Delete",
+      "DeleteConfirmTitle": "Delete Group",
+      "DeleteConfirmDesc": "This action will remove this group from the system. Are you sure you want to delete ?"
+    },
+    "form": {
+      "title": "Create Group",
+      "groupName": "Group name",
+      "groupNameRequire": "Please enter group name",
+      "submit": "Add Group"
+    },
+    "messages": {
+      "successfully": "You have successfully registered an group into the Asset Management System.",
+      "unsuccessfully": "An error occurred. Please try again."
+    },
+    "detail": {
+      "groupName": "Group name",
+      "groupUsers": "Members list",
+      "userCount": "Members",
+      "kioskCount": "Kiosk Count",
+      "status": "Status",
+
+      "title": "Details Group",
+      "info": "Group Information",
+      "btnCancel": "Cancel",
+      "btnSave": "Add"
+    },
+    "update": {
+      "title": "Update Group Information",
+      "info": "Group Information",
+      "btnSave": "Save",
+      "btnCancel": "Cancel",
+      "form": {
+        "name": "Group name",
+        "status": "Status"
+      },
+      "messageSuccess": "Successfully updated Group Information",
+      "messageError": "Updating Group information failed",
+      "addUserToGroup": "Add Members to Group",
+      "removeUserFromGroup": "Remove Members from Group"
+    }
+  },
+
+  "product": {
+    "title": "Product Management",
+    "CreateProduct": {
+      "title": "Create Product"
+    },
+    "DetailProduct": {
+      "UpdateProduct": "Update Product",
+      "AddPackage": "Add Package",
+      "UpdatePackage": "Update Package",
+
+      "title": "Details Product",
+      "ProductName": "Product Name",
+      "ProductCode": "Product Code",
+      "ColorCodePrimary": "Color Code Primary",
+      "ColorCodeSecondary": "Color Code Secondary",
+      "HotLine": "HotLine",
+      "ProductIcon": "Product Logo",
+      "isRequireSerialNumber": "Require Serial Number"
+    }
+  },
+
+  "paymentHub": {
+    "paymentHubList": "Payment HUB List",
+    "paymentHubInfo": "Payment HUB Information",
+    "paymentHubActive": "Active Payment HUB",
+    "btnAddPaymentHub": "Add New Payment HUB",
+    "paymentHubNoNActive": "There are currently no Payment Hub in use",
+    "updatePaymentHub": "Update Payment Hub"
+  },
+  "localSimApiConfig": {
+    "localSimApiList": "Local Shop API Configuration List",
+    "localSimApiInfo": "Local Shop API Information",
+    "localSimApiActive": "Active Local Shop API Config",
+    "btnAddLocalSimApi": "Add New Local Shop API Config",
+    "localSimApiNoNActive": "There are currently no Local Shop API Config in use",
+    "updateLocalSimApi": "Update Local Shop API Config",
+    "Active": "Active"
+  },
+  "UIKiosk": {
+    "banner": {
+      "title": "Kiosk Banner Management",
+      "disabled": "Disabled",
+      "enabled": "Enabled",
+      "disabledMess": "Banner is disabled",
+      "enabledMess": "Banner in enabled",
+      "addBanner": {
+        "title": "Add Kiosk Banner ",
+        "btnUpload": "Upload Banner"
+      },
+      "PriorityBanner": {
+        "title": "Priority Kiosk Banner",
+        "btnPriorityBanner": "Save",
+        "AlertMess": "Drag and drop the banner to arrange its priority. Banners will be displayed in sorted order"
+      },
+      "ChangeStatusKiosk": {
+        "enabledMess": "This action will change the banner's Status to Visible and the banner will be displayed. Are you sure you want to do it?",
+        "DisabledMess": "This action will change the banner's Status to Disabled and the banner will not be displayed. Are you sure you want to do it?",
+        "DeleteMess": "This action will remove the banner from the system. Are you sure you want to do it?",
+        "messageSuccess": "Successfully change banner Status ",
+        "messageError": "Updating banner Status failed"
+      }
+    },
+    "video": {}
+  },
+  "UploadDragger": {
+    "Title": "Click or drag file to this area to upload",
+    "DescImgMultiple": "Supports uploading multiple files and has file formats: ",
+    "Desc": "Supports uploading file and has file formats: ",
+    "SubDescImg": "Uploaded images must have dimensions"
+  },
+  "settingMenuItems": {
+    "account": {
+      "userProfile": "User Profile",
+      "changePassword": "Change Password",
+      "role": "Role",
+      "signOut": "Sign out"
+    }
+  },
+  "layout": {
+    "appName": "Kiosk Management System",
+    "sideBar": {
+      "dashboard": "Dashboard",
+      "account": "Account",
+      "kioskManagement": "Kiosk Management",
+      "paymentInfo": "Payment Info",
+      "sales": "Sales",
+      "cameraManagement": "Camera",
+      "inventoryManagement": "Inventory Management",
+      "groupManagement": "Group Management",
+      "errorManagement": "Error Management",
+      "maintenanceManagement": "Maintenance Management",
+
+      "Configuration": {
+        "title": "Configuration",
+        "paymentHub": "Payment Hub",
+        "localshopApi": "Local shop api"
+      },
+      "KioskUIManagement": {
+        "title": "Kiosk UI",
+        "banner": "Banner",
+        "video": "Instructional videos"
+      },
+      "productManagement": {
+        "title": "Product Management",
+        "product": "Product",
+        "vnpass": "VNPass",
+        "simLocal": "Sim Local"
+      }
+    }
+  },
+  "profile": {
+    "messages": {
+      "getProfileUnsuccessfully": "There were errors occurred. Please try again.",
+      "updateProfileSuccessfully": "Update profile successfully.",
+      "updateProfileUnsuccessfully": "Update profile unsuccessfully.",
+      "changePasswordSuccessfully": "Change password successfully.",
+      "changePasswordUnsuccessfully": "There were errors occurred. Please try again."
+    }
+  },
+  "messages": {
+    "system": {
+      "invalidKey": "There were errors occurred. Please contact to the system administrator",
+      "ERR_201": "The email has existed already",
+      "ERR_202": "The LoginID has existed already",
+      "ERR_108": "The default role is required",
+      "formDiscard": "Your data is not saved, do you want to continue ?",
+      "updateDataSuccessfully": "Update data successfully",
+      "fetchDataSuccessfully": "Fetch data successfully",
+      "updateDataUnSuccessfully": "Update data unsuccessfully"
+    },
+    "session": {
+      "err401": "Session expired. Please login again"
+    },
+    "info": {
+      "required": "is required.",
+      "warningDelete": "Do you really want to delete?",
+      "defineFields": "Please define fields for this category first!",
+      "addField": "Please select a category before adding new field!",
+      "saveChanges": "Please save the current changes before adding other records!",
+      "warningTokenIsUnlock": "Do you want to unlock this token ?"
+    },
+    "validate": {
+      "space": "Account can't have spaces",
+      "number": "Must be a number",
+      "phoneNumberCharter": "Phone number must be between 10-11 characters",
+      "password": "Invalid password,Password must contain all 3 types of characters:Character (a-z, A-Z), number (0-9), and some special characters (! @ # $% ^ & * () _ + =).",
+      "url": "Invalid url",
+      "positiveNumber": "Invalid positive number",
+      "confirmPassword": "Your password and confirmation password do not match.",
+      "validDoMain": "Invalid domain",
+      "email": "Email is not defined",
+      "maxValue": "Maximum is:",
+      "minLength": "must be at least",
+      "minLengthcharacters": "characters in length",
+      "WarningPassword": "The password",
+      "maxLength": "maximum is"
+    },
+    "fhir": {
+      "message": {
+        "resourceNotFound": "Resource not found"
+      },
+      "saveDicom": {
+        "code001": "There is an error occurred - code 001",
+        "code002": "There is an error occurred - code 002",
+        "code003": "There is an error occurred - code 003",
+        "code004": "Save data unsuccessfully - code 004",
+        "code005": "This dicom data has been saved already - code 005"
+      },
+      "saveAnnotation": {
+        "code001": "This dicom data has not been saved yet- code 001",
+        "code002": "Add notes unsuccessfully - code 002"
+      }
+    }
+  },
+  "buttons": {
+    "search": "Search",
+    "action": "Action",
+    "addNew": "Add new",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "save": "Save",
+    "saveChanges": "Save Change",
+    "import": "Import",
+    "export": "Export",
+    "addAssetByBatch": "Add new asset buy batch",
+    "chooseImage": "Choose image",
+    "agreed": "Agree",
+    "yes": "Yes",
+    "no": "No",
+    "filter": "Filter",
+    "disabled": "Disabled",
+    "enabled": "Enabled",
+    "detail": "Detail",
+    "confirm": "Confirm",
+
+    "edit": "Edit"
+  },
+  "spanText": {
+    "actions": "Actions"
+  },
+  "404": {
+    "title": "PAGE NOT FOUND",
+    "description": "Sorry the page you are looking for could not be found"
+  },
+  "403": {
+    "title": "ERROR 403 FORBIDDEN",
+    "description": "If there is a problem, please contact technical support"
+  },
+  "GO DASHBOARD": {
+    "title": "GO DASHBOARD"
+  }
+}

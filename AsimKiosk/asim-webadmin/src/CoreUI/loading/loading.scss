@@ -1,0 +1,16 @@
+.loading {
+  .ant-spin .ant-spin-dot {
+    font-size: 50px !important;
+  }
+  .ant-spin.ant-spin-lg .ant-spin-dot {
+    font-size: 70px !important;
+    margin-bottom: 10px;
+    .ant-spin-dot-item {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .ant-spin.ant-spin-sm .ant-spin-dot {
+    font-size: 44px !important;
+  }
+}

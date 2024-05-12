@@ -1,0 +1,12 @@
+﻿using AsimKiosk.Application.Core.Abstractions.Messaging;
+using AsimKiosk.Contracts.Common;
+using AsimKiosk.Contracts.Maintenance;
+using AsimKiosk.Domain.Core.Primitives;
+
+namespace AsimKiosk.Application.Core.Features.Maintenance.Queries.GetAllTickets;
+
+public class GetAllTicketQuery(int pageSize, int page) : IQuery<Maybe<PagedList<MaintenanceResponse>>>
+{
+    public int PageSize { get; set; } = pageSize;
+    public int Page { get; set; } = page;
+}

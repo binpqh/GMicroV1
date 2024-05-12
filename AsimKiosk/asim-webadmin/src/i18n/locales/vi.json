@@ -1,0 +1,728 @@
+{
+  "signIn": {
+    "form": {
+      "email": "Email",
+      "username": "Tài khoản đăng nhập",
+      "password": "Mật khẩu",
+      "login": "Đăng nhập",
+      "forgotPassword": "Quên mật khẩu ?"
+    },
+    "messages": {
+      "successfully": "Bạn đã đăng nhập thành công vào hệ thống.",
+      "unsuccessfully": "Login ID hoặc mật khẩu không hợp lệ.Vui lòng thử lại."
+    },
+    "inputRequire": {
+      "username": "Vui lòng nhập tên đăng nhập!",
+      "password": "Vui lòng nhập mật khẩu!"
+    }
+  },
+  "register": {
+    "title": "Thêm tài khoản",
+    "form": {
+      "email": "Email",
+      "fullName": "Tên người dùng",
+      "username": "Tài khoản",
+      "password": "Mật khẩu",
+      "groupId": "Chọn nhóm",
+      "role": "Chọn quyền",
+      "address": "Địa chỉ",
+      "phoneNumber": "Số điện thoại",
+      "submit": "Đăng ký"
+    },
+    "messages": {
+      "successfully": "Bạn đã đăng ký thành công tài khoản vào hệ thống.",
+      "unsuccessfully": "Đã có lỗi xẩy ra.Vui lòng thử lại."
+    },
+    "inputRequire": {
+      "email": "Vui lòng nhập email",
+      "username": "Vui lòng nhập tên đăng nhập!",
+      "password": "Vui lòng nhập mật khẩu!",
+      "fullName": "Vui lòng nhập tên người dùng",
+      "groupId": "Vui lòng chọn nhóm",
+      "role": "Vui lòng chọn quyền",
+      "address": "Vui lòng nhập địa chỉ",
+      "phoneNumber": "Vui lòng nhập số điện thoại"
+    }
+  },
+  "account": {
+    "title": "Quản lý tài khoản",
+    "form": {
+      "fullName": "Tên người dùng",
+      "username": "Tài khoản",
+      "groupId": "Nhóm",
+      "role": "Quyền",
+      "status": "Tình trạng",
+      "address": "Địa chỉ",
+      "action": "Thao tác"
+    }
+  },
+  "forgotPassword": {
+    "form": {
+      "email": "Email"
+    },
+    "btnForgotPassword": "Quên mật khẩu",
+    "messages": {
+      "sendRequestSuccessfully": "Gửi yêu cầu đổi mật khẩu thành công. Vui lòng check email của bạn để thực hiện các bước tiếp theo",
+      "wrongEmail": "Email bạn nhập không hợp lệ. Vui lòng kiểm tra lại.",
+      "guideline": "Vui lòng nhập thông tin Email vào bên dưới để lấy lại mật khẩu"
+    }
+  },
+  "resetPassword": {
+    "form": {
+      "password": "Mật khẩu mới",
+      "rePassword": "Xác nhận mật khẩu mới"
+    },
+    "btnChangePassword": "Đổi mật khẩu",
+    "messages": {
+      "expired": "Yêu cầu đặt lại mật khẩu của bạn đã hết hạn. Vui lòng thử lại.",
+      "hi": "Xin chào",
+      "guideline": "Vui lòng đặt lại mật khẩu của bạn",
+      "changePasswordSuccessfully": "Bạn đã đặt lại mật khẩu thành công!",
+      "msgPleaseGoToLogin": "Vui lòng đăng nhập lại để tiếp tục sử dụng hệ thống."
+    }
+  },
+  "changePassword": {
+    "btnCancel": "Hủy",
+    "btnSave": "Lưu",
+    "form": {
+      "oldPassword": "Mật khẩu hiện tại",
+      "password": "Mật khẩu mới",
+      "confirmPassword": "Xác nhận mật khẩu mới"
+    },
+    "messages": {
+      "success": "Đổi mật khẩu thành công",
+      "failure": "Đổi mật khẩu thất bại",
+      "ERR_107": "Mật khẩu hiện tại của bạn không chính xác.",
+      "ERR_105": "Mật khẩu và Xác nhận mật khẩu phải giống nhau."
+    }
+  },
+  "search": {
+    "fullTextSearch": {
+      "inputValue": "Nhập từ khóa",
+      "search": "Tìm kiếm",
+      "advanceSearch": "Tìm kiếm nâng cao",
+      "clear": "Làm mới",
+      "reset": "Cài lại"
+    },
+    "optionsAdvanceSearch": {
+      "settingAdvanceSearch": "Cài đặt tìm kiếm nâng cao",
+      "chooseOptionsAdvanceSearch": "Vui lòng chọn các trường muốn dùng để tìm kiếm",
+      "checkAll": "Chọn tất cả",
+      "cancel": "Hủy",
+      "choose": "Chọn"
+    },
+    "advanceSearch": {
+      "settingAdvanceSearch": "Cài đặt tìm kiếm nâng cao",
+      "simpleSearch": "Tìm kiếm đơn giản",
+      "cancel": "Hủy",
+      "search": "Tìm kiếm",
+      "all": "Tất cả"
+    },
+    "columns": {
+      "settingColumnOptions": "Cài đặt hiển thị cột",
+      "chooseOptionsColumn": "Vui lòng lựa chọn các cột muốn hiển thị",
+      "messages": {
+        "getColumnOptionsUnsuccessfully": "Lấy lựa chọn cột thất bại"
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Trang chủ",
+    "displayList": "Hiển thị",
+    "recordList": "Bản ghi"
+  },
+  "paymentInformation": {
+    "title": "Thông tin thanh toán",
+    "list": {
+      "columns": {
+        "tenKiosk": "Kiosk",
+        "orderNumber": "Mã đơn hàng",
+        "loaiSim": "Loại sim",
+        "maGoiCuoc": "Gói cước",
+        "soTien": "Số tiền",
+        "status": "Trạng thái",
+        "ngayTao": "Ngày thực hiện",
+        "tongSimTraTien": "Số lượng"
+      },
+      "btnXemDicom": "Xem lịch sử dicom"
+    },
+
+    "detail": {
+      "title": "Thông tin chi tiết thanh toán",
+      "btnCancel": "Hủy"
+    }
+  },
+  "sales": {
+    "title": "Doanh số",
+    "list": {
+      "columns": {
+        "tenKiosk": "Kiosk",
+        "doanhSo": "Doanh số",
+        "tuNgay": "Từ ngày",
+        "denNgay": "Đến ngày"
+      },
+      "form": {
+        "tuNgay": "Từ ngày",
+        "denNgay": "Đến ngày"
+      }
+    },
+    "export": "Xuất excell"
+  },
+  "cameraManagement": {
+    "title": "Camera giám sát",
+    "videoList": "Danh sách Video"
+  },
+
+  "datePickerFrom": {
+    "datePicker": "Chọn ngày",
+    "today": "Hôm nay",
+    "Last7Days": "7 ngày trước",
+    "Last14Days": "14 ngày trước",
+    "Last30Days": "30 ngày trước",
+    "Last90Days": "90 ngày trước"
+  },
+  "maintenance": {
+    "title": "Quản lý bảo trì",
+    "list": {
+      "columns": {
+        "kioskName": "Kiosk",
+        "logBy": "Người tạo",
+        "createdAt": "Ngày tạo",
+        "note": "Nội dung",
+        "deviceErrorCode": "Ngoại vi",
+        "maintenanceState": "Trạng thái",
+        "assignee": "Người bảo trì"
+      },
+      "btnAdd": "Thêm mới bảo trì",
+      "btnSuccecs": "Hoàn thành phiếu bảo trì",
+      "btnDelete": "Xoá phiếu bảo trì",
+      "btnAssignee": "Giao người thực hiện"
+    },
+
+    "detail": {
+      "title": "Thông tin phiếu bảo trì",
+      "info": "Thông tin chính",
+
+      "ChoseUser": "Chọn người bảo trì",
+      "ChoseDeviceError": "Chọn ngoại vi lỗi"
+    },
+    "errMessage": {
+      "noKioskSelected": "Bạn chưa chọn kiosk",
+      "areYouSure": "Bạn có chắc muốn thực hiện hành động này?",
+      "openLockOK": "Mở khóa thành công",
+      "openLockFailed": "Mở khóa không thành công",
+      "tatAppOK": "Tắt ứng dụng thành công",
+      "tatAppFailed": "Tắt ứng dụng không thành công",
+      "refreshConfigOK": "Làm mới cấu hình thành công",
+      "refreshConfigFailed": "Làm mới cấu hình không thành công",
+      "rebootOK": "Reboot thành công",
+      "rebootFailed": "Reboot không thành công",
+      "restartAppOK": "Restart App thành công",
+      "restartAppFailed": "Restart App không thành công"
+    }
+  },
+
+  "inventoryManagement": {
+    "title": "Quản lý tồn kho",
+    "dispenser": "Khay Thẻ",
+    "ticketList": "Danh sách phiếu nhập kho",
+    "inventoryKioskInfo": "Thông tin tồn kho",
+    "AddTicket": "Thêm phiếu nhập kho",
+    "AlertAddTicketMess": "Vui lòng chọn khay thẻ và thêm thông tin sản phẩm bạn muốn thêm tồn kho.",
+    "list": {
+      "columns": {
+        "STT": "STT",
+        "kioskName": "Tên Kiosk",
+        "groupName": "Tên group",
+        "createdAt": "Ngày tạo",
+        "progress": "Tiến độ",
+        "creatorName": "Người tạo"
+      },
+      "KioskInventory": {
+        "quantity": "Còn lại (thẻ)",
+        "errorQuantity": "khay lỗi",
+        "itemCode": "Mã sản phẩm",
+        "dispenserSlot": "Khay thẻ",
+        "spaceRemaining": "Khay trống (thẻ)",
+        "cleanErrorTray": "Làm trống khay lỗi"
+      }
+    },
+    "detailTicket": {
+      "title": "Chi tiết phiếu nhập kho",
+      "info": "Thông tin sản phẩm",
+      "UpdateInfo": "Cập nhật thông tin phiếu",
+      "btnAddInfo": "Thêm thông tin sản phẩm",
+      "validate1Product": "Ít nhất phải có 1 sản phẩm trong phiếu tương ứng với 1 khay thẻ",
+      "validate4Product": "Tối đa được tạo 4 sản phẩm trong phiếu tương ứng với 4 khay thẻ",
+
+      "messageUpdateSuccess": "Cập nhật thông tin phiếu nhập kho thành công",
+      "messageUpdateError": "Cập nhật thông tin phiếu nhập kho thất bại ",
+      "form": {
+        "ChoseKiosk": "Chọn Kiosk",
+        "ticketFile": "Tài liệu đính kèm",
+        "kioskName": "Tên kiosk",
+        "deviceId": "Mã kiosk",
+        "status": "Trạng thái",
+        "groupName": "Thuộc Nhóm",
+        "creatorName": "Người tạo",
+        "progress": "Tiến độ",
+        "description": "Mô tả",
+        "createdAt": "Ngày tạo"
+      },
+      "validateMess": {
+        "card": "thẻ",
+        "maxCard": "Số lượng nhập tối đa của Khay là",
+        "SerialTo": "Tổng hiệu của trường 'Đến Serial - Từ Serial' phải bằng trường 'Số lượng'"
+      },
+      "productQuantities": {
+        "AlertSimMess": "SIM LOCAL - Nhập Mã Serial. Lưu ý: Chuỗi Serial phải theo thứ tự tăng tiến và tổng hiệu phải bằng trường 'Số lượng'",
+        "title": "Chi tiết phiếu",
+        "itemName": "Tên sản phẩm",
+        "deviceName": "Tên thiết bị",
+        "itemCode": "Mã sản phẩm",
+        "dispenserSlot": "Khay thẻ",
+        "quantity": "Số lượng",
+        "from": "Từ Serial",
+        "to": "Đến Serial ",
+        "confirmationImageKey": "Ảnh xác nhận",
+        "completionState": "Trạng thái",
+        "finishedAt": "Hoàn thành",
+        "assigneeName": "Thực hiện"
+      },
+      "ChangeStatusTicket": {
+        "title": "Đổi trạng thái sản phẩm",
+        "completedTitle": "Xác nhận hoàn thành",
+        "completedMess": "Hành động này xác nhận đã thêm thẻ vào khay tương ứng và sẽ đổi trạng thái của sản phẩm thành COMPLETED.",
+        "enabledMess": "Hành động này sẽ đổi trạng thái của sản phẩm thành PENDING. Bạn chắc chắn muốn đổi ?",
+        "DisabledMess": "Hành động này sẽ đổi trạng thái của sản phẩm thành DISABLE. Bạn chắc chắn muốn đổi ?",
+
+        "messageSuccess": "Cập nhật trạng thái sản phẩm thành công",
+        "messageError": "Cập nhật trạng thái sản phẩm thất bại "
+      }
+    }
+  },
+
+  "overview": {
+    "title": "Tổng quan",
+    "list": {
+      "columns": {
+        "ten": "Kiosk",
+        "nhietDo": "Nhiệt độ",
+        "doAm": "Độ ẩm",
+        "soLuongBan": "Số lượng bán",
+        "soLuongTon": "Số lượng tồn",
+        "trangThai": "Trạng thái"
+      }
+    }
+  },
+  "errorManagement": {
+    "title": "Quản lý lỗi API",
+    "detail": {
+      "title": "Chi tiết cảnh báo",
+      "btnCancel": "OK",
+      "pannelInfo": "Kiosk",
+      "list": {
+        "columns": {
+          "createdAt": "Ngày tạo",
+          "type": "Log Type",
+          "apiUrl": "API URL",
+          "desc": "Nội dung"
+        }
+      }
+    },
+    "list": {
+      "columns": {
+        "kioskName": "Tên Kiosk",
+        "groupName": "Tên Group",
+        "deviceId": "Mã Kioks",
+        "numberOfLogs": "Số log"
+      }
+    }
+  },
+
+  "kiosk": {
+    "title": "Danh sách Kiosk",
+
+    "list": {
+      "columns": {
+        "deviceId": "Mã",
+        "name": "Tên Kiosk",
+        "healthStatus": "Hiệu suất",
+        "status": "Trạng thái",
+        "state": "Tình trạng",
+        "action": "Hành động",
+        "groupName": "Nhóm"
+      },
+      "btnAcction": "Chi tiết",
+      "btnApproved": "Chấp thuận",
+      "btnReject": "Từ chối"
+    },
+    "detail": {
+      "title": "Chi tiết Kiosk",
+      "info": "Thông tin kiosk",
+      "btnCancel": "Hủy",
+      "btnSave": "Thêm mới",
+      "form": {
+        "name": "Tên kiosk",
+        "deviceId": "Mã kiosk",
+        "service": "Dịch vụ",
+        "address": "Địa chỉ",
+        "config": "Cấu hình",
+        "status": "Trạng thái",
+        "healthStatus": "Hiệu suất",
+        "posCodeTerminal": "Terminal Id",
+        "groupId": "Thuộc Nhóm"
+      },
+      "configuration": {
+        "title": "Chi tiết cấu hình",
+        "device": "Thiết bị"
+      },
+      "externalInformation": {
+        "logPeripheral": "Xem Log",
+        "title": "Thông tin ngoại vi",
+        "editTitle": "Cập nhật thiết bị ngoại vi",
+        "starNum": "Đánh giá",
+        "mainBoard": "Mainboard",
+        "sensor": "Cảm biến",
+        "locker": "Khóa điện",
+        "printer": "Máy in",
+        "simList": "Danh sách khay thẻ",
+        "dispenser1": "Khay Thẻ 1",
+        "dispenser2": "Khay Thẻ 2",
+        "dispenser3": "Khay Thẻ 3",
+        "dispenser4": "Khay Thẻ 4",
+        "camera": "Camera",
+        "sdcard": "SD card",
+        "ups": "UPS",
+        "vnpos": "VNPOS",
+        "deviceCode": "Mã",
+        "deviceName": "Tên thiết bị",
+        "devicePath": "Cổng COM",
+        "itemCode": "Mã sản phẩm",
+        "productCode": "Loại sản phẩm",
+        "hasSerialNumbers": "Lưu Số SERIAL",
+        "warningPaper": "Cảnh báo",
+        "paperEmpty": "Máy in gần hết giấy",
+        "temperture": "Nhiệt độ",
+        "bateryLevel": "Phần trăm pin còn lại",
+        "consumedLoad": "Tiêu thụ tải",
+        "batteryVoltage": "Điện áp của pin",
+        "inputVoltage": "Điện áp đầu vào",
+        "outPutVoltage": "Điện áp đầu ra",
+        "frequencyOutput": "Tần số của dòng điện"
+      }
+    },
+    "update": {
+      "title": "Cập nhập Kiosk",
+      "info": "Thông tin kiosk",
+      "btnSave": "Lưu",
+      "btnCancel": "Hủy",
+      "form": {
+        "index": "STT",
+
+        "name": "Tên kiosk",
+        "posCodeTerminal": "Terminal Id",
+        "groupId": "Nhóm",
+        "address": "Địa chỉ",
+
+        "service": "Dịch vụ",
+        "config": "Cấu hình",
+        "status": "Trạng thái",
+        "simList": "Danh sách khay sim",
+        "dispenser1": "Sim Dispenser1",
+        "dispenser2": "Sim Dispenser2",
+        "dispenser3": "Sim Dispenser3",
+        "dispenser4": "Sim Dispenser4",
+        "dispenserStatus": "Trạng thái khay sim",
+        "simQuantity": "Số lượng",
+        "path": "Đường dẫn",
+        "paymentHub": "Phương thức thanh toán"
+      },
+      "externalInformation": "Thông tin ngoại vi",
+      "messageSuccess": "Cập nhật thông tin Kiosk thành công",
+      "messageError": "Cập nhật thông tin Kiosk thất bại "
+    },
+    "ChangeStatusKiosk": {
+      "enabledMess": "Hành động này sẽ đổi Trạng thái của kiosk thành Active. Bạn chắc chắn muốn đổi ?",
+      "DisabledMess": "Hành động này sẽ đổi Trạng thái của kiosk thành Inactive. Bạn chắc chắn muốn đổi ?",
+      "messageSuccess": "Cập nhật trạng thái Kiosk thành công",
+      "messageError": "Cập nhật trạng thái Kiosk thất bại ",
+      "enabledPeripheralMess": "Hành động này sẽ đổi Trạng thái của thiết bị ngoại vi thành Active. Bạn chắc chắn muốn đổi ?",
+      "DisabledPeripheralMess": "Hành động này sẽ đổi Trạng thái của thiết bị ngoại vi thành Inactive. Bạn chắc chắn muốn đổi ?",
+      "messagePeripheralSuccess": "Cập nhật trạng thái thiết bị ngoại vi thành công",
+      "messagePeripheralError": "Cập nhật trạng thái thiết bị ngoại vi thất bại "
+    }
+  },
+
+  "group": {
+    "title": "Danh sách nhóm",
+    "form": {
+      "title": "Thêm Nhóm",
+      "groupName": "Tên Nhóm",
+      "groupNameRequire": "Vui lòng nhập tên nhóm",
+      "submit": "Thêm nhóm"
+    },
+    "messages": {
+      "successfully": "Bạn đã đăng ký thành công nhóm vào hệ thống.",
+      "unsuccessfully": "Đã có lỗi xẩy ra.Vui lòng thử lại."
+    },
+    "list": {
+      "columns": {
+        "groupId": "Mã",
+        "name": "Tên nhóm",
+        "status": "Trạng thái",
+        "userCount": "Thành viên",
+        "kioskCount": "Số Kiosk",
+        "action": "Hành động"
+      },
+      "btnAcction": "Chi tiết",
+      "btnDelete": "Xoá",
+      "DeleteConfirmTitle": "Xoá Group",
+      "DeleteConfirmDesc": "Hành động này sẽ xoá group này ra khỏi hệ thống . Bạn chắc chắn muốn xoá ?"
+    },
+    "detail": {
+      "groupName": "Tên Nhóm",
+      "groupUsers": "Danh sách thành viên",
+      "userCount": "Thành viên",
+      "kioskCount": "Số Kiosk",
+      "status": "Trạng thái",
+      "title": "Chi tiết nhóm",
+      "info": "Thông tin nhóm",
+      "btnCancel": "Hủy",
+      "btnSave": "Lưu"
+    },
+    "update": {
+      "title": "Cập nhập thông tin nhóm",
+      "info": "Thông tin nhóm",
+      "btnSave": "Lưu",
+      "btnCancel": "Hủy",
+      "form": {
+        "name": "Tên nhóm",
+        "status": "Trạng thái"
+      },
+      "messageSuccess": "Cập nhật thông tin group thành công",
+      "messageError": "Cập nhật thông tin group thất bại",
+      "addUserToGroup": "Thêm thành viên",
+      "removeUserFromGroup": "Xoá thành viên"
+    }
+  },
+
+  "product": {
+    "title": "Quản lý Sản Phẩm",
+    "CreateProduct": {
+      "title": "Tạo sản phẩm"
+    },
+    "DetailProduct": {
+      "UpdateProduct": "Cập nhật sản phẩm",
+      "AddPackage": "Thêm Gói / Thẻ",
+      "UpdatePackage": "Cập nhật Gói / Thẻ",
+
+      "title": "CHI TIẾT SẢN PHẨM",
+      "ProductName": "Tên sản phẩm",
+      "ProductCode": "Mã sản phẩm",
+      "ColorCodePrimary": "Mã màu chính",
+      "ColorCodeSecondary": "Mã màu phụ",
+      "HotLine": "HotLine",
+      "ProductIcon": "Logo sản phẩm",
+      "isRequireSerialNumber": "Lưu số Serial"
+    },
+    "ProductHeading": {
+      "title": "Tiêu đề sản phẩm",
+      "productImg": "Hình sản phẩm",
+      "InfoHeading": "Mô tả sản phẩm",
+      "Heading": "Tiêu đề",
+      "SubHeading": "Tiêu đề phụ",
+      "Description": "Mô tả"
+    }
+  },
+  "paymentHub": {
+    "paymentHubList": "Danh sách cấu hình thanh toán",
+    "paymentHubInfo": "Thông tin cấu hình thanh toán",
+    "paymentHubActive": "Cấu hình thanh toán đang sử dụng",
+    "btnAddPaymentHub": "Thêm cấu hình thanh toán",
+    "paymentHubNoNActive": "Hiện chưa sử dụng cấu hình nào",
+    "updatePaymentHub": "Chỉnh sửa cấu hình thanh toán"
+  },
+  "localSimApiConfig": {
+    "localSimApiList": "Danh sách cấu hình đấu nối gói sim",
+    "localSimApiInfo": "Thông tin cấu hình đấu nối gói sim",
+    "localSimApiActive": "Cấu hình đấu nối gói sim đang sử dụng",
+    "btnAddLocalSimApi": "Thêm cấu hình đấu nối gói sim",
+    "localSimApiNoNActive": "Hiện chưa sử dụng cấu hình nào",
+    "updateLocalSimApi": "Chỉnh sửa cấu hình đấu nối gói sim",
+    "Active": "Đang sử dụng"
+  },
+
+  "UIKiosk": {
+    "banner": {
+      "title": "Quản lý Banner Kiosk",
+      "disabled": "Vô hiệu hoá",
+      "enabled": "Hiển thị",
+      "disabledMess": "Banner không được hiển thị",
+      "enabledMess": "Banner đang được hiển thị",
+      "addBanner": {
+        "title": "Thêm Banner Kiosk",
+        "btnUpload": "Thêm Banner"
+      },
+      "PriorityBanner": {
+        "title": "Sắp xếp Banner",
+        "btnPriorityBanner": "Lưu thay đổi",
+        "AlertMess": "Kéo thả banner để sắp xếp độ ưu tiên của banner. Banner sẽ được hiển thị theo thứ tự được sắp xếp"
+      },
+      "ChangeStatusKiosk": {
+        "enabledMess": "Hành động này sẽ đổi Trạng thái của banner thành Hiển Thị và banner sẽ được hiện thị. Bạn chắc chắn muốn thực hiện?",
+        "DisabledMess": "Hành động này sẽ đổi Trạng thái của banner thành Vô Hiệu Hoá và banner sẽ không được hiện thị . Bạn chắc chắn muốn thực hiện?",
+        "DeleteMess": "Hành động này sẽ xoá banner khỏi hệ thống. Bạn chắc chắn muốn thực hiện?",
+        "messageSuccess": "Cập nhật trạng thái banner thành công",
+        "messageError": "Cập nhật trạng thái banner thất bại "
+      }
+    },
+    "video": {}
+  },
+  "UploadDragger": {
+    "Title": "Nhấp hoặc kéo tệp vào khu vực này để tải lên",
+    "DescImgMultiple": "Hỗ trợ tải lên nhiều file một lúc và có định dạng file là: ",
+    "Desc": "Hỗ trợ tải file lên và có định dạng file là: ",
+    "SubDescImg": "Hình tải lên phải có kích thước"
+  },
+  "settingMenuItems": {
+    "account": {
+      "userProfile": "Hồ sơ cá nhân",
+      "changePassword": "Đổi mật khẩu",
+      "role": "Vai trò",
+      "signOut": "Đăng xuất"
+    }
+  },
+  "layout": {
+    "appName": "Hệ thống quản lý Kiosk",
+    "sideBar": {
+      "dashboard": "Tổng Quan",
+      "account": "Tài Khoản",
+      "kioskManagement": "Quản lý kiosk",
+      "paymentInfo": "Thông tin thanh toán",
+      "sales": "Doanh số",
+      "groupManagement": "Quản lý nhóm",
+      "cameraManagement": "Camera",
+      "inventoryManagement": "Quản lý tồn kho",
+      "errorManagement": "Quản lý lỗi API",
+      "maintenanceManagement": " Quản lý bảo trì",
+
+      "Configuration": {
+        "title": "Cấu hình",
+        "paymentHub": "Thanh toán",
+        "localshopApi": "Đấu nối gói sim"
+      },
+      "KioskUIManagement": {
+        "title": "Giao diện kiosk",
+        "banner": "Banner",
+        "video": "Video hướng dẫn"
+      },
+      "productManagement": {
+        "title": "Quản lý Sản phẩm",
+        "product": "Sản phẩm",
+        "vnpass": "VNPass",
+        "simLocal": "Sim Local"
+      }
+    }
+  },
+  "profile": {
+    "messages": {
+      "getProfileUnsuccessfully": "Có lỗi xảy ra khi lấy dữ liệu. Vui lòng thử lại.",
+      "updateProfileSuccessfully": "Cập nhật thông tin thành công.",
+      "updateProfileUnsuccessfully": "Cập nhật không thành công.",
+      "changePasswordSuccessfully": "Đặt lại mật khẩu thành công.",
+      "changePasswordUnsuccessfully": "Đặt lại mật khẩu không thành công. Đã có lỗi xảy ra, vui lòng thử lại."
+    }
+  },
+  "messages": {
+    "system": {
+      "invalidKey": "Đã có lỗi trong hệ thống, Vui lòng liên hệ với người quản trị hệ thống",
+      "ERR_201": "Email của người dùng đã được sử dụng",
+      "ERR_202": "LoginID của người dùng đã được sử dụng",
+      "ERR_108": "Role mặc định là bắt buộc",
+      "formDiscard": "Dữ liệu của bạn chưa được lưu, bạn có muốn tiếp tục không ?",
+      "updateDataSuccessfully": "Cập nhật dữ liệu thành công",
+      "fetchDataSuccessfully": "Lấy dữ liệu thành công",
+      "updateDataUnSuccessfully": "Cập nhật dữ liệu không thành công"
+    },
+    "session": {
+      "err401": "Phiên làm việc đã hết hạn. Vui lòng đăng nhập lại"
+    },
+    "info": {
+      "required": "là thông tin bắt buộc",
+      "warningDelete": "Bạn có thực sự muốn xóa không?",
+      "defineFields": "Vui lòng xác định các trường cho danh mục này!",
+      "addField": "Vui lòng chọn một danh mục trước khi thêm trường mới!",
+      "saveChanges": "Vui lòng lưu các thay đổi hiện tại trước khi thêm các bản ghi khác",
+      "warningTokenIsUnlock": "Bạn có muốn mở khóa cho token này ko ?"
+    },
+    "validate": {
+      "space": "Tài khoản không thể có dấu cách",
+      "number": "Phải là một số!",
+      "phoneNumberCharter": "Số điện thoại có ít nhất 10 số và không nhiều hơn 11 số",
+      "password": "Mật khẩu không hợp lệ. Mật khẩu phải chứa cả 3 loại ký tự : ký tự (a-z, A-Z), số (0-9) và một số ký tự đặc biệt (!@#$%^&*()_+=).",
+      "url": "Url không hợp lệ",
+      "positiveNumber": "Số dương không hợp lệ",
+      "confirmPassword": "Mật khẩu và Xác nhận mật khẩu phải giống nhau",
+      "validDoMain": "Miền không hợp lệ",
+      "email": "Email không đúng định dạng",
+      "maxValue": "Tối đa là:",
+      "minLength": "Phải có ít nhất",
+      "minLengthcharacters": "Kí tự",
+      "WarningPassword": "Mật khẩu",
+      "maxLength": "Chỉ được tối đa"
+    },
+    "fhir": {
+      "message": {
+        "resourceNotFound": "Không tìm thấy resource"
+      },
+      "saveDicom": {
+        "code001": "Đã có lỗi xảy ra, hãy thử lại - code 001",
+        "code002": "Đã có lỗi xảy ra, hãy thử lại - code 002",
+        "code003": "Đã có lỗi xảy ra, hãy thử lại - code 003",
+        "code004": "Lưu dữ liệu không thành công - code 004",
+        "code005": "Dữ liệu file dicom đã được lưu rồi - code 005"
+      },
+      "saveAnnotation": {
+        "code001": "Bạn chưa lưu dữ liệu dicom này- code 001",
+        "code002": "Thêm notes không thành công - code 002"
+      }
+    }
+  },
+  "buttons": {
+    "search": "Tìm kiếm",
+    "action": "Chức năng",
+    "addNew": "Thêm mới",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "save": "Lưu",
+    "saveChanges": "Lưu thay đổi",
+    "import": "Nhập từ file",
+    "export": "Xuất ra file",
+    "addAssetByBatch": "Thêm mới tài sản theo lô",
+    "chooseImage": "Chọn hình ảnh",
+    "agreed": "Đồng ý",
+    "yes": "Có",
+    "no": "Không",
+    "filter": "Lọc",
+    "disabled": "Vô hiệu hoá",
+    "enabled": "Kích hoạt",
+    "detail": "Chi tiết",
+    "confirm": "Xác nhận",
+    "edit": "Cập nhật"
+  },
+  "spanText": {
+    "actions": "Thao tác"
+  },
+  "404": {
+    "title": "KHÔNG TÌM THẤY TRANG",
+    "description": "Xin lỗi, trang bạn đang tìm không thể tìm thấy"
+  },
+  "403": {
+    "title": "BẠN KHÔNG CÓ QUYỀN TRUY CẬP",
+    "description": "Nếu có lỗi phát sinh, vui lòng liên hệ bộ phận kỹ thuật!"
+  },
+  "GO DASHBOARD": {
+    "title": "VỀ TRANG CHỦ"
+  }
+}

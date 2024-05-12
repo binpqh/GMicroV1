@@ -1,0 +1,238 @@
+syntax = "proto3";
+
+package com.asimgroup.paymentservice.grpc.service.config;
+option csharp_namespace = "AsimKiosk.Infrastructure.Common.PaymentHub";
+option java_multiple_files = true;
+option java_package = "com.asimgroup.paymentservice.grpc.service.config";
+option java_outer_classname = "PaymentConfigServiceProto";
+
+// The greeting service definition.
+service PaymentConfigService {
+  // Sends a greeting
+  rpc GetAllPlugin (PluginRequest) returns (PluginResponse) {}
+  rpc GetClassLoaderByPartnerCode(ClassLoaderRequest) returns (ClassLoaderResponse) {}
+  rpc GetPaymentConfig(PaymentConfigRequest) returns (CommonResponse){}
+  rpc GetMerchantConfig(PaymentConfigRequest) returns (Merchant){}
+  rpc GetMerchantByMerchantProductId(TransactionConfigRequest) returns (ChannelProduct) {}
+  rpc GetPartnerByIdPartnerProductId(TransactionConfigRequest) returns (PartnerProduct) {}
+  rpc GetPartnerByMerchantAndChannel(GetPartnerByMerchantAndChannelRequest) returns (GetPartnerByMerchantAndChannelResponse){}
+  rpc GetPaymentMethod(BankCodeRequest) returns (CommonResponse){}
+  rpc CreateNewMerchant(CreateNewMerchantRequest) returns (CommonResponse){}
+  rpc CreateNewChannel(CreateNewChannelRequest) returns (CommonResponse){}
+  rpc ConfigPaymentMethod(ConfigPaymentMethodRequest) returns (CommonResponse){}
+}
+message ConfigPaymentMethodRequest {
+  string merchantCode = 1;
+  string channelCode = 2;
+  string partnerCode = 3;
+  string productCode = 4;
+  string requestId = 5;
+  string deviceId = 6;
+}
+message CreateNewChannelRequest {
+  string channelCode = 1;
+  string channelName = 2;
+  string description = 3;
+  string requestId = 4;
+  string deviceId = 5;
+}
+message CreateNewMerchantRequest{
+  string merchantName = 1;
+  string requestId = 2;
+  string deviceId = 3;
+}
+message CommonResponse {
+  string code = 1;
+  string message = 2;
+  Response response = 3;
+}
+
+message Response {
+  oneof response {
+    PaymentConfigResponse paymentConfig = 1;
+    CreateMerchantResponse merchant = 3;
+    CreateChannelResponse channel = 4;
+    ConfigPaymentMethodResponse paymentMethod = 5;
+  }
+  repeated PaymentMethod paymentMethods = 2;
+}
+message PaymentMethod {
+  string partnerCode = 1;
+  string partnerName = 2;
+  string icon = 3;
+  repeated PaymentProduct products = 4;
+}
+message ConfigPaymentMethodResponse {
+  MerchantChannelResponse merchantChannel = 1;
+  PartnerProductResponse partnerProduct = 2;
+}
+message MerchantChannelResponse {
+  string merchantCode = 1;
+  string channelCode = 2;
+}
+message PartnerProductResponse {
+  string partnerCode = 1;
+  string productCode = 2;
+}
+message CreateChannelResponse {
+  string channelCode = 1;
+  string channelName = 2;
+  string description = 3;
+}
+message CreateMerchantResponse {
+  string merchantCode = 1;
+  string merchantName = 2;
+  MerchantConfig merchantConfig = 3;
+}
+message PaymentPartnerProduct {
+  string partnerCode = 1;
+  string productCode = 2;
+  PaymentProduct paymentProduct = 3;
+  optional string partnerName = 4;
+  optional string icon = 6;
+  optional int32 partnerType = 7;
+}
+message PaymentProduct {
+  string productCode = 1;
+  string productName = 2;
+  repeated PaymentProductBankCode productBankCodes = 3;
+  string icon = 4;
+  bool allowOnlinePaid = 5;
+  int32 priority = 6;
+}
+message PaymentProductBankCode {
+  PaymentBankCode paymentBankCode = 1;
+}
+message PaymentBankCode{
+  string bankCode = 1;
+  string bankName = 2;
+  string icon = 3;
+}
+//request obj
+message BankCodeRequest {
+  string merchantCode = 1;
+  string channelCode = 2;
+  string requestId = 3;
+  string deviceId = 4;
+}
+message GetPartnerByMerchantAndChannelRequest{
+  string merchant = 1;
+  string channel = 2;
+  string requestId = 3;
+  string deviceId = 4;
+}
+message PluginRequest{
+  string requestId = 1;
+  string deviceId = 2;
+}
+message ClassLoaderRequest{
+  string partnerCode = 1;
+  string requestId = 2;
+  string deviceId = 3;
+}
+message TransactionConfigRequest {
+  optional int64 merchantInfo = 1;
+  optional int64 partnerInfo = 2;
+  string requestId = 3;
+  string deviceId = 4;
+}
+message PaymentConfigRequest{
+  string merchantId = 1;
+  string channelCode = 2;
+  string productCode = 3;
+  string partnerCode = 4;
+  string requestId = 5;
+  string deviceId = 6;
+  string terminalId = 7;
+  string shopId = 8;
+}
+// The response message containing the greetings
+message PluginResponse {
+  repeated Plugin plugins = 1;
+}
+message GetPartnerByMerchantAndChannelResponse {
+  repeated Partner partners = 1;
+}
+message Plugin {
+  string pluginUrl = 1;
+  repeated ClassLoader classLoaders = 2;
+}
+message ClassLoader {
+  string className = 1;
+}
+message ClassLoaderResponse{
+  string className = 1;
+}
+message PaymentConfigResponse{
+  repeated ClassLoader classLoaders = 1 ;
+  Payments payments = 2;
+}
+message Payments {
+  repeated PartnerMerchant partnerMerchants = 1;
+  repeated Product products = 2;
+  repeated Terminal terminals = 3;
+}
+message PartnerMerchant {
+  string partnerCode = 1;
+  string merchantCode = 2;
+  PartnerConfig partnerConfig = 3;
+  PaymentMerchant paymentMerchant = 4;
+}
+message  PaymentMerchant {
+  MerchantConfig merchantConfig = 1;
+}
+
+message Terminal {
+  optional string schema = 1;
+  optional string ip = 2;
+  optional string port = 3;
+  optional string path = 4;
+  optional  string terminalId = 5;
+  optional string address = 6;
+
+}
+
+message PartnerProduct {
+  optional int64 id = 1;
+  optional string partnerCode = 2;
+  optional string productCode = 3;
+  Partner partner = 4;
+}
+message Partner {
+  optional Plugin plugin = 1;
+  optional PartnerConfig partnerConfig = 2;
+  optional string partnerCode = 3;
+  optional string partner_name = 4;
+  optional string  description = 5;
+
+}
+message PartnerConfig {
+  optional string config = 1;
+}
+message ChannelProduct {
+  optional  int64 id = 1;
+  optional Channel channel = 2;
+  optional Product product = 3;
+}
+message Product{
+  optional string productCode = 1;
+  optional string name = 2;
+  optional string  description = 3;
+  optional string  type = 4;
+}
+message Channel{
+  optional int64 id = 1;
+  optional string config = 2;
+  optional Merchant merchant = 3;
+  optional string channelCode = 4;
+  optional string channelName = 5;
+}
+message MerchantConfig {
+  string config = 1;
+}
+message Merchant {
+  optional string merchantCode = 1;
+  optional MerchantConfig merchantConfig = 2;
+  optional string merchantName = 3;
+  optional string description = 4;
+}

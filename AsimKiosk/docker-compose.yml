@@ -1,0 +1,62 @@
+version: "3.8"
+
+services:
+  webadmin:
+    build:
+      context: ./asim-webadmin
+      dockerfile: Dockerfile
+      args:
+        APIURL: http://103.107.182.5:9601
+        HUBURL: http://103.107.182.5:9601/KioskHub
+    ports:
+      - "9680:80"
+    restart: always
+    networks:
+      - asim
+
+  webapi:
+    build:
+      context: ./asim-backendv2
+      dockerfile: Dockerfile
+    ports:
+      - "9601:8080"
+    restart: always
+    environment:
+      - ConnectionStrings__MongoDb=mongodb://AsimBEV2:devbybincnt@asimMongoDb:27017/AsimDB?authSource=admin
+    depends_on:
+      - asimMongoDb
+    volumes:
+      - upload_resource:/app/Resources
+    networks:
+      - asim
+
+  asimMongoDb:
+    image: mongo:latest
+    container_name: asimMongoDb
+    restart: always
+    ports:
+      - "27022:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=AsimBEV2
+      - MONGO_INITDB_ROOT_PASSWORD=devbybincnt
+    volumes:
+      - mongodb_data:/data/db
+      - ./asim-backendv2/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    networks:
+      - asim
+  # dnginx:
+  #   image: nginx
+  #   container_name: docker-nginx
+  #   restart: always
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx:/etc/nginx
+  #   networks:
+  #     - asim
+volumes:
+  mongodb_data:
+  upload_resource:
+networks:
+  asim:

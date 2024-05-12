@@ -1,0 +1,62 @@
+@tailwind base;
+
+@layer base {
+  button {
+    background-color: inherit;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap%27');
+
+$primary: #f1f1f1;
+$secondary: #c1c1c1;
+$secondary1: #ecc94b;
+
+:root {
+  font-family: 'Montserrat', 'Inter', 'Avenir', 'Helvetica ', 'Arial',
+    'sans-serif';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // -webkit-text-size-adjust: 100%;
+  -webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.2s;
+  scrollbar-width: thin;
+  scrollbar-color: $secondary $primary;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $primary;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $secondary;
+  border-radius: 14px;
+  border: 2px solid $primary;
+}
+
+.css-dev-only-do-not-override-quxx0i.ant-table-wrapper
+  .ant-table-filter-trigger {
+  font-style: 20px !important;
+}

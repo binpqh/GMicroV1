@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Context\**" />
+    <Compile Remove="Core\Features\KioskApplication\Command\PaymentSuccessWithOrderCode\**" />
+    <Compile Remove="Core\Features\Kiosk\Peripheral\**" />
+    <Compile Remove="Core\Features\Kiosk\Queries\GetVideoListByDeviceId\**" />
+    <Compile Remove="Core\Features\Payment\Query\**" />
+    <EmbeddedResource Remove="Context\**" />
+    <EmbeddedResource Remove="Core\Features\KioskApplication\Command\PaymentSuccessWithOrderCode\**" />
+    <EmbeddedResource Remove="Core\Features\Kiosk\Peripheral\**" />
+    <EmbeddedResource Remove="Core\Features\Kiosk\Queries\GetVideoListByDeviceId\**" />
+    <EmbeddedResource Remove="Core\Features\Payment\Query\**" />
+    <None Remove="Context\**" />
+    <None Remove="Core\Features\KioskApplication\Command\PaymentSuccessWithOrderCode\**" />
+    <None Remove="Core\Features\Kiosk\Peripheral\**" />
+    <None Remove="Core\Features\Kiosk\Queries\GetVideoListByDeviceId\**" />
+    <None Remove="Core\Features\Payment\Query\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="fluentvalidation" Version="11.8.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.MongoDB" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AsimKiosk.Domain\AsimKiosk.Domain.csproj" />
+    <ProjectReference Include="..\AsimKiosk.Contracts\AsimKiosk.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\Features\LogPeripherals\Queries\" />
+    <Folder Include="Core\Features\Notification\Event\" />
+    <Folder Include="Core\Features\Report\Queries\Order\ExportOrderReport\" />
+    <Folder Include="Core\Features\Report\Queries\Sales\GetSalesReport\" />
+  </ItemGroup>
+
+</Project>
