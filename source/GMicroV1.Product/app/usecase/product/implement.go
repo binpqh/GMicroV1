@@ -53,7 +53,7 @@ func (puc *useCase) GetItemsByProductCode(ctx context.Context, productCode strin
 }
 
 // GetPaginate implements UseCase.
-func (puc *useCase) GetPaginate(ctx context.Context, size int64, page int64) ([]domain.Product, int64, int64, error) {
+func (puc *useCase) GetPaginate(ctx context.Context, size int64, page int64) ([]domain.ProductResponse, int64, int64, error) {
 	productItems, totalCount, totalPages, err := puc.productRepo.GetPaginate(ctx, size, page)
 	if err != nil {
 		return nil, 0, 0, err

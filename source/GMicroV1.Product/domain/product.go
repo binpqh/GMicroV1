@@ -24,6 +24,23 @@ type Product struct {
 	UpdateAt        time.Time `json:"updateAt"`
 	DeleteOn        time.Time `json:"deleteOn"`
 }
+type ProductResponse struct {
+	ID              int64  `json:"id"`
+	Code            string `json:"code" validate:"required"`
+	Name            string `json:"name" validate:"required"`
+	Image           string `json:"logo"`
+	// Items           []ProductItem
+	CountryOfOrigin string
+	// SubCategoryType SubCategory //Id of category
+	CategoryId      *int64
+	SubCategoryId   *int64
+	IsActive        bool
+	IsDeleted       bool
+	CreateAt        time.Time `json:"createAt"`
+	UpdateAt        time.Time `json:"updateAt"`
+	DeleteOn        time.Time `json:"deleteOn"`
+}
+
 type ProductItem struct {
 	ID         string
 	Code       string
@@ -50,7 +67,7 @@ type ProductRepository interface {
 	CountInactive(ctx context.Context) (int64, error)
 	CountDeleted(ctx context.Context) (int64, error)
 	GetAllProducts(ctx context.Context) ([]Product, error)
-	GetPaginate(ctx context.Context, size int64, page int64) ([]Product, int64, int64, error)
+	GetPaginate(ctx context.Context, size int64, page int64) ([]ProductResponse, int64, int64, error)
 	GetPaginateInactive(ctx context.Context, size int64, page int64) ([]Product, int64, int64, error)
 	GetPaginateDeleted(ctx context.Context, size int64, page int64) ([]Product, int64, int64, error)
 	GetById(ctx context.Context, productId int64) (*Product, error)
@@ -145,13 +162,15 @@ func (p *ProductImplementation) GetAllProducts(ctx context.Context) ([]Product, 
 	}
 	return products, nil
 }
-func (p *ProductImplementation) GetPaginate(ctx context.Context, size int64, page int64) ([]Product, int64, int64, error) {
+func (p *ProductImplementation) GetPaginate(ctx context.Context, size int64, page int64) ([]ProductResponse, int64, int64, error) {
 	offset := int32(size) * int32(page-1)
 	query := `
 		SELECT
-			*
-		FROM Product
+		ID , Name, Image, IsActive,CategoryId,SubCategoryId
+		IsDeleted, CreateAt, UpdateAt, DeleteOn
+		FROM Product p
 		WHERE p.IsActive = 1 AND p.IsDeleted != 1
+		LIMIT ? OFFSET ?
 		`
 	rows, err := p.Conn.QueryContext(ctx, query, size, offset)
 	if err != nil {
@@ -160,10 +179,10 @@ func (p *ProductImplementation) GetPaginate(ctx context.Context, size int64, pag
 
 	defer rows.Close()
 
-	var products []Product
+	var products []ProductResponse
 	for rows.Next() {
-		var product Product
-		if err := rows.Scan(&product.ID, &product.Code, &product.Name, &product.Image, &product.IsActive, &product.IsDeleted); err != nil {
+		var product ProductResponse
+		if err := rows.Scan(&product.ID, &product.Name, &product.Image, &product.IsActive, &product.IsDeleted); err != nil {
 			return nil, 0, 0, err
 		}
 		products = append(products, product)
@@ -187,7 +206,7 @@ func (p *ProductImplementation) GetPaginateInactive(ctx context.Context, size in
 		SELECT
 			ID , Code, Name, Image, IsActive,
 			IsDeleted, CreateAt, UpdateAt, DeleteOn,
-		FROM Product
+		FROM Product p
 		WHERE p.IsActive = 0 AND p.IsDeleted != 1
 		`
 	rows, err := p.Conn.QueryContext(ctx, query, size, offset)
@@ -224,7 +243,7 @@ func (p *ProductImplementation) GetPaginateDeleted(ctx context.Context, size int
 		SELECT
 			ID , Code, Name, Image, IsActive,
 			IsDeleted, CreateAt, UpdateAt, DeleteOn,
-		FROM Product
+		FROM Product p
 		WHERE p.IsDeleted = 1
 		`
 	rows, err := p.Conn.QueryContext(ctx, query, size, offset)

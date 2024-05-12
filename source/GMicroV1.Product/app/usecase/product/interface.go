@@ -6,7 +6,7 @@ import (
 )
 
 type UseCase interface {
-	GetPaginate(ctx context.Context, size int64, page int64) ([]domain.Product, int64, int64, error)
+	GetPaginate(ctx context.Context, size int64, page int64) ([]domain.ProductResponse, int64, int64, error)
 	GetProductsByCategory(ctx context.Context, categoryId int64) ([]domain.Product, error)
 	GetProductsBySubCategory(ctx context.Context, subCategoryId int64) ([]domain.Product, error)
 	GetPaginateInactive(ctx context.Context, size int64, page int64) ([]domain.Product, int64, int64, error)

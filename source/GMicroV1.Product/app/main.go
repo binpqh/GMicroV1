@@ -49,7 +49,7 @@ func main() {
 func initializeDatabaseConnection() (*sql.DB, error) {
 	username := "root"
 	password := "bin123"
-	host := "localhost"
+	host := "172.18.169.53"
 	port := "3306"
 	database := "gmicrov1"
 
